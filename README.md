@@ -229,12 +229,67 @@ Vehicles trust SCMS once
 4. **Medical Devices**: Healthcare systems verifying device credentials
 5. **Industrial Systems**: Factory equipment authenticating with central systems
 
+---
 
-## References
+## Project Proposal: SCMS Performance Evaluation & Implementation
 
-- **SCMS Overview**: IEEE 1609.2 (Vehicle-to-Vehicle Communication)
-- **C-V2X Standard**: 3GPP 5G V2X specification
-- **PKI Basics**: Understanding Public Key Infrastructure (PKI)
-- **Cryptography**: Digital signatures and certificates explained
+### What is Our Thesis?
 
+> **"Secure Credential Management Systems can be effectively deployed on cloud platforms (AWS/Azure) to support large-scale C-V2X communications, with measurable performance characteristics suitable for real-time vehicular networks."**
+
+### Problem Statement
+
+Current automotive security relies heavily on centralized credential management. However:
+- ❌ How well do SCMS implementations perform on cloud platforms?
+- ❌ What are the latency/throughput trade-offs?
+- ❌ Which cloud platform (AWS vs Azure) is better suited?
+- ❌ Can SCMS scale to handle thousands of vehicles?
+
+### What We're Proposing to Write/Develop
+
+```mermaid
+graph LR
+    A["Phase 1<br/>Research & Setup"] -->
+    B["Phase 2<br/>Implementation"] -->
+    C["Phase 3<br/>Testing & Evaluation"] -->
+    D["Phase 4<br/>Report & Analysis"]
+
+    style A fill:#bbdefb
+    style B fill:#b3e5fc
+    style C fill:#80deea
+    style D fill:#4dd0e1
+```
+---
+
+### Research Questions We're Answering
+
+| Question | Why It Matters |
+|----------|---------------|
+| **How fast can SCMS verify credentials?** | Safety-critical systems need instant verification |
+| **What's the scalability limit?** | Can it handle millions of vehicles? |
+| **Which cloud platform performs better?** | Cost/performance optimization |
+| **What are the failure modes?** | System reliability is critical |
+| **How does latency change under load?** | Real-world performance prediction |
+---
+
+### How This Relates to Real-Time Operating Systems (RTOS)
+
+| RTOS Concept | How SCMS Uses It |
+|--------------|-----------------|
+| **Real-Time Constraints** | Credential verification must be fast (deterministic latency) |
+| **System Reliability** | Certificate revocation & failure recovery mechanisms |
+| **Performance** | Throughput & latency critical for vehicular networks |
+| **Scalability** | Managing thousands of concurrent credential requests |
+| **Security** | PKI & cryptographic operations in time-critical systems |
+
+---
+
+### Project Timeline
+
+| Phase | Key Deliverable |
+|-------|-----------------|
+| **Research & Setup** | Working SCMS deployment |
+| **Implementation** | Test scripts & automation |
+| **Testing & Evaluation** | Performance data collected |
+| **Report & Presentation** | Final report + slides |
 ---
